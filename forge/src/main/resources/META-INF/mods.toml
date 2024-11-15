@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "Apache-2.0"
+
+[[mods]]
+modId = "yummy_glass"
+version = "${version}"
+displayName = "Yummy Glass"
+authors = "bringmeabagelnow"
+description = '''
+"@p is the type of person to see glass and ask "Is anyone gonna eat that?" and not wait for an answer."
+'''
+logoFile = "assets/yummy_glass/icon.png"
+
+[[dependencies.yummy_glass]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yummy_glass]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
