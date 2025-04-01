@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "yummy_glass",
+	"version": "${version}",
+	"name": "Yummy Glass",
+	"description": "\"@p is the type of person to see glass and ask \"Is anyone gonna eat that?\" and not wait for an answer.\"",
+	"authors": [
+		"bringmebagel"
+	],
+	"contact": {
+		"homepage": "https://github.com/bringmebagelnow",
+		"sources": "https://github.com/bringmebagelnow/yummyglass"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/yummy_glass/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bringmebagel.yummyglass.YummyGlass"
+		],
+		"client": [
+			"bringmebagel.yummyglass.YummyGlassClient"
+		]
+	},
+	"mixins": [
+		"yummy_glass.mixins.json",
+		{
+			"config": "yummy_glass.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
